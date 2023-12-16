@@ -1,0 +1,365 @@
+html {
+    box-sizing:border-box; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+body{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.location:hover {
+    text-decoration: underline;
+}
+/* Navigation Bar */
+.navBar{
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    background-color: rgb(46, 15, 5);
+    z-index: 1;
+    
+}
+.nav {
+    float: right;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+li a {
+   
+    color: white;
+    padding: 22px 16px;
+   
+  }
+  
+  
+li a:hover{
+    background-color: black;
+
+}
+.png{
+    float: left;
+    max-width: 14%;
+    padding-left: 20px;
+    margin: 18px 0px 18px 80px;
+}
+
+.pages{ 
+    display: inline; 
+    font-size: 20px ;
+}
+.page4{
+    display: inline; 
+    margin-top: 20px;
+    font-size: 20px ;
+    margin-right: 40px;
+}
+/* Bottom Bar */
+.bottomBar{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 250px;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    column-gap: 30px;
+   justify-items: center;
+    justify-content: space-evenly;
+   
+
+}
+.googleMap{
+   padding: 25px;
+    
+}
+
+.location{
+    color: white;
+    padding-top: 10px;
+}
+
+.location a:visited {
+    text-decoration: none;
+    color:white;
+}
+.content{
+  margin-top: 70px;
+
+}
+.bottomText{
+    font-size: 14px;
+}
+/* Welcome */
+.image{
+    background-image: url(resturant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+.welcomeTitle{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
+.welcomePNG{
+    width: 70%;
+}
+
+/* History */
+ 
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.paragraphContainer{
+    margin:20px 150px;
+
+   
+}
+.paragraph{
+    padding: 10px;
+}
+
+/* Poem */
+.poemrec{
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(230, 189, 85);
+    margin: 110px;
+
+    display: inline-grid;
+    grid-template-columns: 6fr 3fr;
+    place-items: center;
+
+}
+.poemIMG{
+    border-radius: 20px;
+}
+.poemText{
+    padding: 40px;
+}
+
+.poemTitle1{
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.poemTitle2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 15px;
+}
+
+.poem{
+    font-style: italic;
+    padding: 19px;
+    
+}
+/* Menu */
+
+.menuHeader{
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+}
+.menuPNG{
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+}
+
+hr{
+    width: 20%;
+}
+.dropMenuBar{
+    position: relative;
+    display:inline-block;
+    min-width: 160px;
+    left: 90px;
+    top: -40px;
+    
+}
+.dropMenuDrop{
+    padding: 15px;
+    color: white;
+    background-color: rgb(46, 15, 5);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.dropMenuContent{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+   
+   background-color: white; 
+}
+.dropMenuBar:hover .dropMenuContent{
+    display: block;
+}
+.dropMenuContent a:hover{
+    background-color: rgb(230, 189, 85);
+}
+.dropMenuContent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.MenuRec{
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(238, 234, 234);
+    margin: 0px auto 150px auto;
+
+    
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    border-radius: 40px;
+    
+}
+.text{
+    margin: 80px 0px 80px 80px;
+}
+.text2{
+    margin: 160px 70px 0px 80px ;
+}
+.text3{
+    margin: 230px 70px 0px 80px ;
+}
+.text5{
+    margin: 250px 70px 0px 80px ;
+}
+.text6{
+    margin: 140px 70px 0px 80px ;
+}
+.text4{
+    margin: 230px 70px 0px 80px ;
+}
+
+.itemTitles{
+    color: rgb(46, 15, 5);
+    text-transform: uppercase;
+    padding: 26px 20px 10px 20px;
+}
+.itemTitles1-2 {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.menutitle2{
+    color: rgb(133, 150, 66); 
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-left: 20px;
+    font-size: 23px;
+}
+.menutitle1{
+    color: rgb(230, 189, 85);
+    text-transform: uppercase;
+    padding: 25px;
+    font-size: 25px;
+}
+.descripItem{
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.descripItem2{
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+.pricing{
+    float: right;
+    font-weight: 700;
+    color: rgb(46, 15, 5);
+    font-size: 18px;
+}
+.pricing2{
+    font-weight: 700;
+   
+}
+.listIndents{
+    text-indent: 70px;
+    margin: 8px; 
+    font-size: 14px;
+    font-weight: 300;
+    text-indent: 40px;    
+}
+
+.priceIndent{
+    font-weight: 700;
+    float: right ;
+    font-size: 15px;
+    
+}
+
+
+.line{
+     width: 90%;
+     float: right;
+}
+
+/* TAKE N' BAKE */
+.MakeGrid{
+    display: inline-grid;
+    grid-template-columns: 4fr 3fr;
+    place-items: center;
+    column-gap: 0px;
+    margin-bottom: 200px;
+}
+.MakeRec{
+    width: 60%;
+    height: fit-content;
+    outline-style: solid ;
+}
+.MakeText{
+    margin: 30px;
+    padding: 30px 0px;
+}
+.BakeRec{
+    width: 45%;
+    height: fit-content;
+    color: white;
+    background-color: rgb(230, 189, 85);
+}
+.BakeText{
+    margin: 30px;
+    padding: 10px 0px;
+}
